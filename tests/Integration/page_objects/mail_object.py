@@ -46,6 +46,7 @@ class Mail_Object:
      Button=self.click_element(self.nxt_button)
      return Button 
     
+    
     # set the password
     @Wrapit._exceptionHandler
     @Wrapit._screenshot
@@ -55,6 +56,7 @@ class Mail_Object:
             positive='The password was set successfully',
             negative='Failed to set the password in the form',
             level='debug')
+
 
     @Wrapit._exceptionHandler
     @Wrapit._screenshot

@@ -18,6 +18,7 @@ localhost_url = 'http://localhost:%s/wd/hub'%ports_conf.port #Set the url of loc
 class DriverFactory(RemoteOptions, LocalBrowsers):
     """Class contains methods for getting web drivers and setting up remote testing platforms."""
 
+    
     def __init__(self, browser='ff', browser_version=None, os_name=None):
         """Constructor for the Driver factory."""
         self.browser = browser
@@ -272,6 +273,7 @@ class DriverFactory(RemoteOptions, LocalBrowsers):
 
         return mobile_driver
 
+    
     @staticmethod
     def print_exception(exception, remote_flag):
         """Print out the exception message and suggest the solution based on the remote flag."""
@@ -316,3 +318,4 @@ class DriverFactory(RemoteOptions, LocalBrowsers):
         set_pref('pdfjs.disabled', True)
 
         return profile
+

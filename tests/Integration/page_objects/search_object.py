@@ -8,6 +8,7 @@ class Search_Object:
     # get the search locator
     search =locators.search
     
+    
     # set search box
     @Wrapit._exceptionHandler
     @Wrapit._screenshot
@@ -17,3 +18,5 @@ class Search_Object:
             positive='successfully Set the search: %s'%search,
             negative='Failed to set the search in the application',
             level='debug')    
+
+            

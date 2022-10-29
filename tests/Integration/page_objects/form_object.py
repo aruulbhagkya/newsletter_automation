@@ -22,6 +22,7 @@ class Form_Object:
     # get the add_another_article locator 
     add_another_articles=locators.add_another_articles
     
+    
     # click  home
     @Wrapit._exceptionHandler
     @Wrapit._screenshot
@@ -29,6 +30,7 @@ class Form_Object:
      home_button=self.click_element(self.home)
      return home_button
 
+   
     #  click add_article
     @Wrapit._exceptionHandler
     @Wrapit._screenshot
@@ -36,6 +38,7 @@ class Form_Object:
      add_button=self.click_element(self.add_articles)
      return add_button
     
+
     #  set url
     @Wrapit._exceptionHandler
     @Wrapit._screenshot
@@ -46,6 +49,7 @@ class Form_Object:
             negative='Failed to set the url in the form',
             level='debug')
      
+    
     # set title
     @Wrapit._exceptionHandler
     @Wrapit._screenshot
@@ -56,6 +60,7 @@ class Form_Object:
             negative='Failed to set the url in the form',
             level='debug')
 
+   
     # set description
     @Wrapit._exceptionHandler
     @Wrapit._screenshot
@@ -66,6 +71,7 @@ class Form_Object:
             negative='Failed to set the description in the form',
             level='debug')        
      
+    
     # set time
     @Wrapit._exceptionHandler
     @Wrapit._screenshot
@@ -76,6 +82,7 @@ class Form_Object:
             negative='Failed to set the time in the form',
             level='debug')
     
+    
     # set category
     @Wrapit._exceptionHandler
     @Wrapit._screenshot
@@ -85,13 +92,15 @@ class Form_Object:
             positive='Set the category to: %s'%category,
             negative='Failed to set the category in the form',
             level='debug')                
-      
+
+
     # click the submit button
     @Wrapit._exceptionHandler
     @Wrapit._screenshot
     def click_submit(self):
      submit_button=self.click_element(self.submit)
      return submit_button
+    
     
     # click add another article button       
     @Wrapit._exceptionHandler
@@ -100,6 +109,7 @@ class Form_Object:
      addanother_article_button=self.click_element(self.add_another_articles)
      return addanother_article_button
    
+    
     @Wrapit._exceptionHandler
     @Wrapit._screenshot
     def submit_article(self,url,title,description,runtime,category):
@@ -113,3 +123,4 @@ class Form_Object:
         result_flag = self.click_addanother_article()
 
         return result_flag
+

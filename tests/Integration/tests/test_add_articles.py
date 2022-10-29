@@ -15,6 +15,7 @@ import conf.mail_conf as conf
 import conf.add_articles_conf as conf
 import pytest
 
+
 @pytest.mark.GUI
 def test_add_article(test_obj):
 
@@ -78,6 +79,7 @@ def test_add_article(test_obj):
         print("Python says:%s"%str(e))
 
     assert expected_pass == actual_pass, "Test failed: %s"%__file__
+
 
 #---START OF SCRIPT
 if __name__=='__main__':

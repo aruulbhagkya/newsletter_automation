@@ -12,10 +12,12 @@ from utils.Wrapit import Wrapit
 class Editarticles_Page(Base_Page,Mail_Object, Hamburger_Object, Search_Object,Table_Object):
     "Page Object for the weather shopper main page"
 
+    
     def start(self):
         "Use this method to go to specific URL -- if needed"
         url = 'manage-articles'
         self.open(url)     
+
 
     # click manage article button
     @Wrapit._exceptionHandler
@@ -23,3 +25,5 @@ class Editarticles_Page(Base_Page,Mail_Object, Hamburger_Object, Search_Object,T
     def click_managearticle_button(self):
      manage_button=self.click_element(self.manage_article)
      return manage_button    
+
+     
